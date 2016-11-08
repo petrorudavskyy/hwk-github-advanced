@@ -1,0 +1,115 @@
+TASK 1.
+ git clone https://github.com/petrorudavskyy/hwk-github-advanced/tree/master
+ echo "<h1>GIT ADVANCED</h1>" > README.md
+ git status
+ git add .
+ git commit -m "Add readme.md"
+ git push orogon master
+ git branch architecture
+ git checkout architecture
+ mkdir assets
+ mkdir uploads
+ echo "<h>Hello everyone<h2>" > index.html
+ git add .
+ git commit -m "Add new folders and files"
+ touch assets/all.js
+ touch assets/css.js
+ git status
+ git add .
+ git commit -m "Add new folders and files"
+ git push origin architecture
+ touch .gitignore
+ echo "/uploads/*" > .gitignore
+ git status
+ git add .
+ git commit -m "Add file gitignore"
+ git push origin architecture
+ git checkout master
+ git merge architecture
+ git checkout master
+ git branch --delete architecture
+ git push origin master
+ 
+TASK 2.
+ pwd
+ cd hwk-github-advanced
+ git branch rebaset
+ touch rebasetest.txt
+ git status
+ git add .
+ git commit -m "Add rebasetest.txt"
+ touch rebasetest2.txt
+ git add .
+ git commit -m "Add rebasetest2.txt"
+ git checkout rebaset
+ git rebase master
+ touch rebasetest3.txt
+ git add .
+ git merge master
+ git merge rebaset
+ git push
+ git branch -d rebaset
+ git push origin :rebaset
+
+TASK 3.
+ mkdir version
+ echo version/myvers.txt
+ git status
+ cd version
+ echo "myversion" > myvers.txt
+ cd ..
+ git status
+ git add .
+ git commit -m "Add folder version with file"
+ git tag v0
+ git push
+ git status
+ git add .
+ git commit -m "Change file"
+ git tag v1
+ git push
+
+TASK 4.
+ git submodule add https://github.com/petrorudavskyy/hello-world-github
+ git add .
+ git commit -m "add submodule hello-world-github"
+ git push
+
+
+
+TASK 5.   https://petrorudavskyy.github.io/hwk-github-advanced/
+
+ git branch gh-pages
+ git checkout gh-pages
+ echo "<h1>Hello world)</h1>" > index.html
+ git add .
+ git commit -m "add file index.html"
+ git status
+ git push origin gh-pages
+	IS ALL RIGHT!
+ echo "<h2>This is some changes</h2>" > index.html
+ git status
+ git add .
+ git commit -m "Add some changes"
+ git push origin gh-pages
+	SITE: https://petrorudavskyy.github.io/hwk-github-advanced/
+
+
+TASK 6.
+ echo "Some changes in file" > file.txt
+ git add .
+ git commit -m "Add file.txt"
+ git branch conflict
+ git checkout conflict
+ echo "Changes if file" > file.txt
+ git add .
+ git commit -m "Change content in file.txt"
+ git checkout master
+ git merge conflict
+ git merge --abort
+ git merge conflict
+ git add .
+ git commit -m "resolved conflict"
+ git push
+
+
