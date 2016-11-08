@@ -68,6 +68,7 @@ TASK 3.
  git commit -m "Change file"
  git tag v1
  git push
+ git push origin v1.0
 
 TASK 4.
  git submodule add https://github.com/petrorudavskyy/hello-world-github
