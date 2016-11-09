@@ -45,6 +45,7 @@ TASK 2.
  git rebase master
  touch rebasetest3.txt
  git add .
+ git commit -m "Changes in file"
  git merge master
  git merge rebaset
  git push
